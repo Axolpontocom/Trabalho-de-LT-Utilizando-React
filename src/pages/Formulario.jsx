@@ -33,6 +33,29 @@ const [numero, setNumero] = useState("");
     console.log("Dados enviados:", nomeAluno, cpfAluno, nomeResponsavel, cpfResponsavel, idadeAluno, dataNascimento, sexoAluno, identidadeAluno, boletimAluno, identidadeResponsavel, telefone1, telefone2, emailResponsavel, emailAluno, atividades, cidade, endereco, bairro, rua, numero);
 } 
 
+const HandleReset = () => {
+    setNomeAluno("");
+    setCpfAluno("");
+    setNomeResponsavel("");
+    setCpfResponsavel("");
+    setIdadeAluno("");
+    setDataNascimento("");
+    setSexoAluno("");
+    setIdentidadeAluno("");
+    setBoletimAluno("");
+    setIdentidadeResponsavel("");
+    setTelefone1("");
+    setTelefone2("");
+    setEmailResponsavel("");
+    setEmailAluno("");
+    setAtividades([]);
+    setCidade("");
+    setEndereco("");
+    setBairro("");
+    setRua("");
+    setNumero("");
+};
+
     return (
         <Base>
                 <form className="formulario" onSubmit={HandleSubmit}>
@@ -67,6 +90,7 @@ const [numero, setNumero] = useState("");
                 
                 />
                 <button className="form" type="submit">Cadastrar</button>
+                <button className="form" type="button" onClick={HandleReset}>Limpar</button>
             </form>    
 
         </Base>

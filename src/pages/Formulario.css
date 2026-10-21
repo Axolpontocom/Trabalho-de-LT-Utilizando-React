@@ -5,12 +5,31 @@
     color: rgb(39, 39, 48);
 }
 
+.formulario{
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(240, 255, 240);
+  align-items: center;
+  width: 50%;
+  box-shadow: 10px 0px 10px;
+}
+
 .formulario .form {
     border: 3px solid rgb(39, 39, 48);
     border-radius: 10px;
+    
   }
 
 .formulario .form:hover {
     border: 3px solid rgb(98, 98, 112);
     cursor: pointer;
+  }
+
+.CentralF {
+    width: 100%;
+    justify-content: center;
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSeMoMFdnjhc1sjrrgWpSKUrX0GNCUTzjOgsWatc-b4Iwx8W6WI9NaDRKn6&s=10);
+    background-size: cover;
+    background-position: center;
+    
   }

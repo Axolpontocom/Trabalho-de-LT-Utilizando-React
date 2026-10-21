@@ -1,12 +1,20 @@
 import './Base.css'
-
+import Logo from './assets/Logo.png'
+import Info from './assets/info.svg'
 function Base({children}) {
     return (
    <>
         <header className="base-header">
-            <h1 style={{color: 'rgb(240, 255, 240)', fontSize: '50px', fontFamily: 'Verdana, Geneva, Tahoma, sans-serif', textAlign: 'center', fontWeight: 'bold', textShadow: '2px 2px 4px rgba(0, 0, 0, 0.5)'}}>
-                <a href="/" className="btn-aside">IFerno</a>
+         <a href="/" className="LinkHeader">
+          <img className='Logo' src={Logo} alt='Logo' style={{width:'20%'}}></img>
+            <h1 className="TextoBase" style={{fontSize: '50px'}}>
+               IFerno
             </h1>
+            </a>
+            <h2 className='TextoBase'style={{fontSize: '25px'}}>Inferno Federal de ciencia e tecnologia</h2>
+         <a href="/Info" className="LinkHeader">
+            <img className='Info' src={Info} alt='Info'></img>
+         </a>
         </header>
      <div className="base-container">
         <aside className="base-aside">

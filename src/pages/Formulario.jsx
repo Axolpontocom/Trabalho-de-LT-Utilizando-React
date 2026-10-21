@@ -58,41 +58,44 @@ const HandleReset = () => {
 
     return (
         <Base>
-                <form className="formulario" onSubmit={HandleSubmit}>
-                <DadosPessoais 
-                    nomeAluno={nomeAluno} setNomeAluno={setNomeAluno}
-                    cpfAluno={cpfAluno} setCpfAluno={setCpfAluno}
-                    nomeResponsavel={nomeResponsavel} setNomeResponsavel={setNomeResponsavel}
-                    cpfResponsavel={cpfResponsavel} setCpfResponsavel={setCpfResponsavel}
-                    idadeAluno={idadeAluno} setIdadeAluno={setIdadeAluno}
-                    dataNascimento={dataNascimento} setDataNascimento={setDataNascimento}
-                    sexoAluno={sexoAluno}  setSexoAluno={setSexoAluno}
-                    
-                />
-                <DadosAdicionais 
-                    atividades={atividades} setAtividades={setAtividades}
-                    cidade={cidade} setCidade={setCidade}
-                    endereco={endereco} setEndereco={setEndereco}
-                    bairro={bairro} setBairro={setBairro}
-                    rua={rua} setRua={setRua}
-                    numero={numero} setNumero={setNumero}
-                />
-                <DadosContato 
-                    telefone1={telefone1} setTelefone1={setTelefone1}
-                    telefone2={telefone2} setTelefone2={setTelefone2}
-                    emailResponsavel={emailResponsavel} setEmailResponsavel={setEmailResponsavel}
-                    emailAluno={emailAluno} setEmailAluno={setEmailAluno}
-                />
-                <DadosDocumentação 
-                    identidadeAluno={identidadeAluno} setIdentidadeAluno={setIdentidadeAluno}
-                    boletimAluno={boletimAluno} setBoletimAluno={setBoletimAluno}
-                    identidadeResponsavel={identidadeResponsavel} setIdentidadeResponsavel={setIdentidadeResponsavel}
-                
-                />
-                <button className="form" type="submit">Cadastrar</button>
-                <button className="form" type="button" onClick={HandleReset}>Limpar</button>
-            </form>    
-
+            <article className="CentralF">
+                <section className="formulario">
+                    <form  onSubmit={HandleSubmit}>
+                        <DadosPessoais 
+                            nomeAluno={nomeAluno} setNomeAluno={setNomeAluno}
+                            cpfAluno={cpfAluno} setCpfAluno={setCpfAluno}
+                            nomeResponsavel={nomeResponsavel} setNomeResponsavel={setNomeResponsavel}
+                            cpfResponsavel={cpfResponsavel} setCpfResponsavel={setCpfResponsavel}
+                            idadeAluno={idadeAluno} setIdadeAluno={setIdadeAluno}
+                            dataNascimento={dataNascimento} setDataNascimento={setDataNascimento}
+                            sexoAluno={sexoAluno}  setSexoAluno={setSexoAluno}
+                            
+                        />
+                        <DadosAdicionais 
+                            atividades={atividades} setAtividades={setAtividades}
+                            cidade={cidade} setCidade={setCidade}
+                            endereco={endereco} setEndereco={setEndereco}
+                            bairro={bairro} setBairro={setBairro}
+                            rua={rua} setRua={setRua}
+                            numero={numero} setNumero={setNumero}
+                        />
+                        <DadosContato 
+                            telefone1={telefone1} setTelefone1={setTelefone1}
+                            telefone2={telefone2} setTelefone2={setTelefone2}
+                            emailResponsavel={emailResponsavel} setEmailResponsavel={setEmailResponsavel}
+                            emailAluno={emailAluno} setEmailAluno={setEmailAluno}
+                        />
+                        <DadosDocumentação 
+                            identidadeAluno={identidadeAluno} setIdentidadeAluno={setIdentidadeAluno}
+                            boletimAluno={boletimAluno} setBoletimAluno={setBoletimAluno}
+                            identidadeResponsavel={identidadeResponsavel} setIdentidadeResponsavel={setIdentidadeResponsavel}
+                        
+                        />
+                        <button className="form" type="submit">Cadastrar</button>
+                        <button className="form" type="button" onClick={HandleReset}>Limpar</button>
+                    </form>    
+                </section>
+            </article>
         </Base>
     )
 }

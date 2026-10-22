@@ -13,6 +13,7 @@
     display: flex;
     font-family: verdana;
     font-weight: bold;
+    font-size: small;
     color: rgb(240, 255, 240);
     flex-direction: column;
     justify-content: center;

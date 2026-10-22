@@ -1,9 +1,12 @@
 
-function Cards({ imagem, variant }) {
+function Cards({ imagem, variant, legenda, tam}) {
     return (
         <article className={`${variant}-card`}>
             <figure className={`${variant}-figure`}>
                 <img className={`${variant}-image`} src={imagem} alt="Imagem 1" />
+                <figcaption className={`${variant}-text`}>
+                    {legenda}
+                </figcaption>
             </figure>
         </article>
 

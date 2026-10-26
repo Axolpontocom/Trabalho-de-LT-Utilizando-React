@@ -5,6 +5,18 @@ import DadosAdicionais from "./CampoForm/DadosAdicionais";
 import DadosContato from "./CampoForm/DadosContato";
 import DadosDocumentação from "./CampoForm/DadosDocumentação";
 import './Formulario.css'
+
+const listaLinks = [
+
+    {name:"Inicio",link:""},
+    {name:"Campus",link:"campus"},
+    {name:"Docentes",link:"docentes"},
+    {name:"Metodologia",link:"Metodologia"},
+    {name:"Info",link:"Info"}
+    
+
+]
+
 function Formulario() {
 
 const [nomeAluno, setNomeAluno] = useState("");
@@ -57,7 +69,7 @@ const HandleReset = () => {
 };
 
     return (
-        <Base>
+        <Base listaButtom={listaLinks} >
             <article className="CentralF">
                 <section className="formulario">
                     <form  onSubmit={HandleSubmit}>

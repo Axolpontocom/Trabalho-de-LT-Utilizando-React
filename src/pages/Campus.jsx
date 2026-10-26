@@ -6,9 +6,18 @@ import campus2 from "../assets/Campus/campus2.jfif"
 import campus3 from "../assets/Campus/campus3.jfif"
 
     
+const listaLinks = [
+
+    {name:"Inicio",link:""},
+    {name:"Docentes",link:"docentes"},
+    {name:"Metodologia",link:"Metodologia"},
+    {name:"Formulário",link:"formulario"},
+    {name:"Info",link:"Info"}
+]
+
 function Campus() {
     return (
-         <Base>
+         <Base listaButtom={listaLinks} >
                 <section className="campus-section">
                 <Cards imagem={campus1} variant="campus" />
                

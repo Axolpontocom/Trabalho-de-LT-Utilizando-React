@@ -1,5 +1,5 @@
 
-function Cards({ imagem, variant, legenda, tam}) {
+function Cards({ imagem, variant, legenda}) {
     return (
         <article className={`${variant}-card`}>
             <figure className={`${variant}-figure`}>
@@ -32,5 +32,30 @@ function CardsDocente({imagem, nome, descricao}) {
     )
 }
 
+
+function CardsEnsino({textobase, textooculto, descoculta}){
+
+    return( 
+    
+    <article className="curtain-card">
+      
+      {/* Conteúdo Base (Frente) */}
+      <section className="card-base-content">
+          <h2>{textobase}</h2>
+      </section>
+
+      {/* Conteúdo Revelado (Cortina que desliza) */}
+      <section className="card-curtain-content">
+          <h2>{textooculto}</h2>
+          <p>{descoculta}</p>
+      </section>
+
+    </article>
+    );
+
+
+}
+
 export default Cards;
 export { CardsDocente };
+export { CardsEnsino };

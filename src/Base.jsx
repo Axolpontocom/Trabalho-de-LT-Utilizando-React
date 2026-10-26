@@ -1,7 +1,7 @@
 import './Base.css'
 import Logo from './assets/Logo.png'
 import Info from './assets/info.svg'
-function Base({children}) {
+function Base({children, listaButtom = []}) {
     return (
    <>
         <header className="base-header">
@@ -20,11 +20,11 @@ function Base({children}) {
         <aside className="base-aside">
             <nav>
                 <ul className="base-nav-list">
-                    <a href="/" className="btn-aside"><li className="base-nav-item">Inicio</li></a>
-                    <a href="/Docentes" className="btn-aside"><li className="base-nav-item">Docentes</li></a>
-                    <a href="/Formulario" className="btn-aside"><li className="base-nav-item">Formulário</li></a>
-                    <a href="/Campus" className="btn-aside"><li className="base-nav-item">Campus</li></a>
-                </ul>
+                    {listaButtom.map((item,index)=>(
+                    <a key={index}  href={`/${item.link}`} className="btn-aside"><li className="base-nav-item">{item.name}</li></a>
+                        ))}
+               
+                    </ul>
             </nav>
         </aside>
         <main className="base-main">

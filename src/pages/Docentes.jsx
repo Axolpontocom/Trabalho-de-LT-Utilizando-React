@@ -8,10 +8,19 @@ import Docente4 from "../assets/Docentes/Docente4.webp"
 import Docente5 from "../assets/Docentes/Docente5.jfif"
 import Docente6 from "../assets/Docentes/Docente6.jfif"
 
+const listaLinks = [
+
+    {name:"Inicio",link:""},
+    {name:"Campus",link:"campus"},
+    {name:"Metodologia",link:"Metodologia"},
+    {name:"Formulário",link:"formulario"},
+    {name:"Info",link:"Info"}
+
+]
 
 function Docentes() {
     return (
-        <Base>
+        <Base listaButtom={listaLinks} >
             <CardsDocente imagem={Docente1}
             nome={" Abdul Alhazred, O Arabe Louco"}
             descricao={"Autor do temível Al Azif (o Necronomicon), ele ensina lógica de programação usando encantamentos que fazem sua mente estilhaçar em dimensões desconhecidas. Se você não entender ponteiros em C, ele garante que você enlouquecerá antes da prova final."}

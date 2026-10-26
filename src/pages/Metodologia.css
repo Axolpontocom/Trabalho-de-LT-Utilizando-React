@@ -1,0 +1,57 @@
+/* Container principal do Card */
+.curtain-card {
+  position: relative;
+  width: 300px;
+  height: 400px;
+  margin: 10px;
+  border-radius: 15px;
+  overflow: hidden; /* Esconde a cortina quando ela desliza para fora */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  background-color: #282c34; /* Cor de fundo da base (frente) */
+  cursor: pointer;
+}
+
+/* 1. Conteúdo da Frente (Base fixa) */
+.card-base-content {
+  width: 100%;
+  height: 100%;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  color: rgb(240, 255, 240);
+  background-color: rgb(39, 39, 48);    ;
+}
+
+/* 2. A Cortina (Conteúdo de trás que entra deslizando) */
+.card-curtain-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  box-sizing: border-box;
+  background-color: rgb(240, 255, 240);
+  color: rgb(39, 39, 48);    
+  border: 2px solid rgb(39, 39, 48);    
+  border-radius: 15px;
+  
+  /* Estado Inicial: Completamente deslocada para a direita (fora do card) */
+  transform: translateY(100%); 
+  transition: transform 0.5s ease /* Animação suave */
+}
+
+/* Efeito Hover: Quando passa o mouse, a cortina desliza para a posição original (0) */
+.curtain-card:hover .card-curtain-content {
+  transform: translateX(0);
+}
+
+

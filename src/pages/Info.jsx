@@ -1,9 +1,20 @@
 import Base from "../Base";
 import './Info.css'
-function Info(){
 
+const listaLinks = [
+
+    {name:"Inicio",link:""},
+    {name:"Campus",link:"campus"},
+    {name:"Docentes",link:"docentes"},
+    {name:"Metodologia",link:"Metodologia"},
+    {name:"Formulário",link:"formulario"},
+
+]
+
+function Info(){
+ 
 return(
-    <Base>
+    <Base listaButtom={listaLinks} >
 
         <article className="InfoArea">
             <p className="InfoText">

@@ -1,41 +1,44 @@
 import Base from "../Base";
-import './Info.css'
+import "./Info.css";
 
 const listaLinks = [
+  { name: "Inicio", link: "" },
+  { name: "Campus", link: "campus" },
+  { name: "Docentes", link: "docentes" },
+  { name: "Metodologia", link: "Metodologia" },
+  { name: "Formulário", link: "formulario" },
+];
 
-    {name:"Inicio",link:""},
-    {name:"Campus",link:"campus"},
-    {name:"Docentes",link:"docentes"},
-    {name:"Metodologia",link:"Metodologia"},
-    {name:"Formulário",link:"formulario"},
-
-]
-
-function Info(){
- 
-return(
-    <Base listaButtom={listaLinks} >
-
-        <article className="InfoArea">
-            <p className="InfoText">
-                Mussum Ipsum, cacilds vidis litro abertis. Posuere libero varius. Nullam a nisl ut ante blandit hendrerit. Aenean sit amet nisi. Atirei o pau no gatis, per gatis num morreus. Copo furadis é disculpa de bebadis, arcu quam euismod magna. Si num tem leite então bota uma pinga aí cumpadi!
-                Diuretics paradis num copo é motivis de denguis. Todo mundo vê os porris que eu tomo, mas ninguém vê os tombis que eu levo! Mais vale um bebadis conhecidiss, que um alcoolatra anonimis. Casamentiss faiz malandris se pirulitá.
-                A ordem dos tratores não altera o pão duris. Nullam volutpat risus nec leo commodo, ut interdum diam laoreet. Sed non consequat odio. Per aumento de cachacis, eu reclamis. Nec orci ornare consequat. Praesent lacinia ultrices consectetur. Sed non ipsum felis.
-                <br></br><br></br>
-                Mussum Ipsum, cacilds vidis litro abertis. Posuere libero varius. Nullam a nisl ut ante blandit hendrerit. Aenean sit amet nisi. Atirei o pau no gatis, per gatis num morreus. Copo furadis é disculpa de bebadis, arcu quam euismod magna. Si num tem leite então bota uma pinga aí cumpadi!
-                Diuretics paradis num copo é motivis de denguis. Todo mundo vê os porris que eu tomo, mas ninguém vê os tombis que eu levo! Mais vale um bebadis conhecidiss, que um alcoolatra anonimis. Casamentiss faiz malandris se pirulitá.
-                A ordem dos tratores não altera o pão duris. Nullam volutpat risus nec leo commodo, ut interdum diam laoreet. Sed non consequat odio. Per aumento de cachacis, eu reclamis. Nec orci ornare consequat. Praesent lacinia ultrices consectetur. Sed non ipsum felis.
-
-
-            </p>
-        </article>
-    
+function Info() {
+  return (
+    <Base listaButtom={listaLinks}>
+      <article className="InfoArea">
+        <p className="InfoText">
+          Bem-vindo ao IFerno, um projeto desenvolvido como parte do trabalho de
+          react da disciplina de LT, mas com uma identidade visual marcante e um
+          clima sombrio que lembra que a vida acadêmica também pode ser um pouco
+          caótica. O site foi pensado para apresentar a proposta do projeto de
+          forma criativa, informativa e visualmente impactante, com foco em uma
+          experiência simples, moderna e responsiva.
+          <br></br>
+          <br></br>O IFerno reúne elementos de apresentação institucional,
+          navegação direta e conteúdo visual que reforça a identidade da marca.
+          Entre suas funcionalidades, estão a exibição de informações, a
+          organização das seções e a criação de uma interface amigável para
+          diferentes dispositivos. A proposta é transmitir uma experiência
+          digital que combina design, criatividade e funcionalidade, mesmo com
+          um tom mais inquietante e humor ácido.
+          <br></br>
+          <br></br>
+          Na parte técnica, o projeto foi desenvolvido com React e Vite, usando
+          JavaScript e JSX para estruturar a interface, além de HTML e CSS para
+          o layout e a estilização. O resultado é um site visualmente forte, com
+          boa organização, responsividade e uma estética que reforça o tema
+          escolhido para o trabalho escolar.
+        </p>
+      </article>
     </Base>
-
-)
-
-
-
-};
+  );
+}
 
 export default Info;

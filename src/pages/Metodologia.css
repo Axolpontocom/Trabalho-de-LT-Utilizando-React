@@ -1,7 +1,7 @@
 /* Container principal do Card */
 .curtain-card {
   position: relative;
-  width: 300px;
+  width: 90%;
   height: 400px;
   margin: 10px;
   border-radius: 15px;
@@ -22,6 +22,8 @@
   align-items: center;
   box-sizing: border-box;
   color: rgb(240, 255, 240);
+  font-size: xx-large;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;  
   background-color: rgb(39, 39, 48);    ;
 }
 
@@ -41,6 +43,8 @@
   box-sizing: border-box;
   background-color: rgb(240, 255, 240);
   color: rgb(39, 39, 48);    
+  font-size: larger;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
   border: 2px solid rgb(39, 39, 48);    
   border-radius: 15px;
   
